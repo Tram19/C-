@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main() {
+	char kytu;
+	printf("nhap ky tu : ");
+	scanf("%c", &kytu) ;
+	
+		    if ( kytu >= 'A' && kytu <= 'Z' || kytu >= 'a' && kytu <= 'z'  ) 
+		
+	    { printf(" ky tu");
+	    
+	    }  else if (kytu >= '0' && kytu <= '9' ) { printf("ky so"); }
+	    else { printf(" ky tu dac biet") ; }
+		
+			}
