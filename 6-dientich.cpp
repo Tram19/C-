@@ -23,11 +23,10 @@
 	
 	else if (a == 3) { printf("Nhap kich thuoc : ");
 	scanf("%f%f%f", &b, &c, &d);
-		if (b <= 0 || c <= 0 || d <= 0 ) { printf("kich thuoc khong hop le"); }
+		if (b <= 0 || c <= 0 || d <= 0 || (b + c <= a) || (a + b <= c) || ( a + c <= b)) { printf("kich thuoc khong hop le"); }
 	else {
 		p= (b + c + d) / 2 ;
 	printf("Dien tich cua hinh tam giac la: %f", sqrt( p * (p -b) * (p - c)* (p - d) ) ); }
 	} 	}
-
 
 
