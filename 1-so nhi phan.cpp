@@ -1,12 +1,13 @@
 #include<stdio.h>  
-#include<conio.h>  
-
-  main()  
+ 
+ int main()  
 {  
   int a[10],n,i;  
  
    printf("Nhap so : ");  
-     scanf("%d",&n);  
+     scanf("%d",&n); 
+     if (n < 0) { printf("Khong the chuyen doi so am") ;}
+     else {
    for(i=0;n>0;i++)  
 {  
    a[i]=n%2;  
@@ -18,4 +19,4 @@
    printf("%d",a[i]);  
 }
 }  
-
+}
